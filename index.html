@@ -28,26 +28,35 @@
   <h1>
     celos x json language file compare
   </h1>
-  <h2 id="error"></h2>
-  <h2 id="valid"></h2>
-  <div class="mid-container">
-    <button id="validate">Validate</button>
-    <div>
-      <label for="selectFile">Main Json File: </label>
-      <input type="file" id="selectFile" value="Import" accept="application/JSON"/><br />
-      <textarea id="result1"></textarea><br />
-      <label for="selectSecondFile">File to compare: </label>
-      <input type="file" id="selectSecondFile" value="Import" accept="application/JSON"/><br />
-      <textarea id="result2"></textarea>
-    </div>
-    <h1>All the fields that are longer than the original.</h1>
 
-    <textarea id="result3"></textarea>
+  <div class="mid-container">
+    <div class="button-container">
+      <button id="validate">Validate</button>
+      <button id="reset" >Reset</button>
+    </div>
+
+    <div>
+      <form action="" id="small-form">
+        <h2 id="error"></h2>
+        <h2 id="valid"></h2>
+        <label for="selectFile">Main Json File: </label>
+        <input type="file" id="selectFile" value="Import" accept="application/JSON"/><br />
+        <textarea id="result1"></textarea><br />
+        <label for="selectSecondFile">File to compare: </label>
+        <input type="file" id="selectSecondFile" value="Import" accept="application/JSON"/><br />
+        <textarea id="result2"></textarea>
+        <h1>All the values that are longer than the original.</h1>
+        <textarea id="result3"></textarea>
+      </form>
+    </div>
+
+
+
   </div>
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/main.js" type="text/javascript"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
