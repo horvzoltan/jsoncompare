@@ -1,4 +1,13 @@
 # jsoncompare
 
-First run npm install,
-npm start --> served on localhost.
+npm install
+npm start
+
+serves on localhost:1234
+
+# What it does
+
+You can only use json files with equal structure otherwise you will get an error.
+Takes the length of the values from both json values and puts the key value pairs into a new json file,
+where the second values length is higher.
+
