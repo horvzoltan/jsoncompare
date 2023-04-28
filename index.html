@@ -31,9 +31,9 @@
 
   <div class="mid-container">
     <div class="button-container">
-      <button id="validate">Validate</button>
-      <button id="reset" >Reset</button>
-      <button id="download" >Download result</button>
+      <button id="validate" class="button-10">Validate</button>
+      <button id="reset" class="button-10">Reset</button>
+      <button id="download" class="button-10">Download result</button>
     </div>
 
     <div>
@@ -42,12 +42,12 @@
         <h2 id="valid"></h2>
         <label for="selectFile">Main Json File: </label>
         <input type="file" id="selectFile" value="Import" accept="application/JSON"/><br />
-        <textarea id="result1"></textarea><br />
+        <textarea id="result1" readonly></textarea><br />
         <label for="selectSecondFile">File to compare: </label>
         <input type="file" id="selectSecondFile" value="Import" accept="application/JSON"/><br />
-        <textarea id="result2"></textarea>
+        <textarea id="result2" readonly></textarea>
         <h1>All the values that are longer than the original.</h1>
-        <textarea id="result3"></textarea>
+        <textarea id="result3" readonly></textarea>
       </form>
     </div>
 
