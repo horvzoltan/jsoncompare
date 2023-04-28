@@ -63,7 +63,7 @@ const iterate = (obj, obj2) => {
   })
 }
 
-function shallowEqual(object1, object2) {
+const shallowEqual = (object1, object2) => {
   const keys1 = Object.keys(object1);
   const keys2 = Object.keys(object2);
 
@@ -93,7 +93,7 @@ const loadFile = (ev, container) => {
   });
 }
 
-function readFileAsText(file) {
+const readFileAsText = (file) => {
   return new Promise(function (resolve, reject) {
     let fr = new FileReader();
 
